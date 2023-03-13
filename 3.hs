@@ -2,6 +2,7 @@
 logList [] = []
 logList (x:xs)=log x:logList xs
 
+sumList :: Num a => [a] -> a
 sumList [] = 0
 sumList (x:xs) = x + sumList xs
 multList [] = 1 
@@ -47,4 +48,4 @@ del l n = clr l n 0
 
 
 
-main = print (bSort (<) [1,2,5,1])
+main = print (multList[1,2,5,1])
