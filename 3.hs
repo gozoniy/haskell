@@ -25,18 +25,11 @@ scalar a b = foldr (+) 0 (zipWith (*) a b)
 --1.3--
 countNegat x = len (getNegative x)
 
-<<<<<<< HEAD
-quicksort :: Ord a => [a] -> [a]
-quicksort [] = []
-quicksort (x:xs) = quicksort(filter (<x) xs) ++ [x] ++ quicksort (filter (>=x) xs)
-
-=======
 --1.4--
 quicksort [] = []
 quicksort (x:xs) = quicksort(filter (<x) xs) ++ [x] ++ quicksort (filter (>=x) xs)
 
 --1.5--
->>>>>>> f961c50a2e09de89577e6fbcf1ef5c5d2be41ceb
 bSort :: (a -> a -> Bool) -> [a] -> [a]
 bSort a [] = []
 bSort a (x:xs) = bSort a (filter (a x) xs) ++ [x] ++ bSort a (filter (not . a x) xs)
