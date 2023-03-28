@@ -4,5 +4,12 @@ wtf a b | a<5 = error " keka"
 
 
 
+data Pair a b = Pair a b
 
-main = wtf 5 2
+
+data Color = Red | Green | Blue
+
+
+del a 0 = Nothing
+del a b = Just (a/b)
+main = print("hola")
