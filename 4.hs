@@ -1,3 +1,4 @@
+
 data Font = Courier | Fixedsys | Lucida deriving (Eq, Show)
 
 data Figure = Circle Float Float Float | Rectangle Float Float Float Float | Triangle Float Float Float Float Float Float
